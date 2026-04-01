@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Explori
 
-## Getting Started
+Explori is a project I built to improve how people discover events in different cities. I wanted to create something that feels simple to use while still handling real data and interactions behind the scenes.
 
-First, run the development server:
+The main idea is straightforward. Users can explore events based on location, with a focus on clarity and ease of navigation rather than overwhelming them with information. I paid close attention to how the interface flows, not just how it looks.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Development Process
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project started small, but it became more complex as soon as I began adding real functionality. What began as a basic page quickly turned into a system that needed to manage data, state, and user interaction across multiple components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I built the project using Next.js with the App Router, along with React and Tailwind CSS. While these tools made development faster, they also introduced challenges that forced me to understand how everything fits together.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Challenges
 
-## Learn More
+One of the biggest challenges was working with the App Router. At first, I did not fully understand the difference between server and client components. This led to issues where parts of the application would not behave as expected. I had to spend time learning where code runs and why certain features require a client component.
 
-To learn more about Next.js, take a look at the following resources:
+State management was another difficult area. Passing data through multiple layers of components quickly became hard to manage. I moved to using context, which improved structure, but introduced new problems with unnecessary re-renders. Fixing this required learning how to stabilize values and use memoization properly.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I also ran into several smaller issues that took longer than expected to debug. In many cases, the problem was not complex, but it required careful thinking to identify what was actually going wrong instead of guessing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Results
 
-## Deploy on Vercel
+By the end of the project, I had built something that is functional, organized, and easier to extend. More importantly, I developed a stronger understanding of how Next.js works, especially with server and client components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+There are still areas I would improve if I continue working on Explori. These include refining the structure of the codebase, improving performance as more data is added, and expanding features such as filtering or personalization.
+
+Run the project using "npm run dev"
+
+Then open https://localhost:3000 in your own personal browser.
